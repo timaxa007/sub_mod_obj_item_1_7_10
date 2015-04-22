@@ -30,8 +30,7 @@ public class RenderItemObj implements IItemRenderer {
 	@Override
 	public void renderItem(ItemRenderType type, ItemStack is, Object... data) {
 		GL11.glPushMatrix();
-		GL11.glTranslatef(0.5F, 1.5F, 0.5F);
-		GL11.glRotatef(180F, 0.0F, 0.0F, 1.0F);
+		GL11.glTranslatef(0.5F, 0.0F, 0.5F);
 		Minecraft.getMinecraft().renderEngine.bindTexture(texture);
 		model.renderAll();
 		GL11.glPopMatrix();
